@@ -1,4 +1,4 @@
-#Filtro negativo
+#Filtro gamma
 from PIL import Image
 
 #Abrir imagem
@@ -19,4 +19,4 @@ for i in range (img.size[0]):
         matriz[i, j] = (r, g, b)
 
 #Salvar a imagem
-img.save('ImagemPBGamma0pt5.jpg')
+img.save('imagemPBGamma0pt5.jpg')
