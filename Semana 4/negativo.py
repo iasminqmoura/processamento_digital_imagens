@@ -18,4 +18,4 @@ for i in range (img.size[0]):
         matriz[i, j] = (r, g, b)
 
 #Salvar a imagem
-img.save('novaImagemPB.jpg')
+img.save('imagemPBNegativo.jpg')
