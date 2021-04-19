@@ -1,0 +1,14 @@
+from PIL import Image
+
+img = Image.open('tulipa.jpg')
+matriz = img.load()
+
+for i in range(img.size[0]):
+    for j in range(img.size[1]):
+        r = matriz[i,j][0]
+        g = matriz[i,j][1]
+        b = matriz[i,j][2]
+        pixels = int((r + g + b)/3)
+        matriz[i,j] = (pixels, pixels, pixels)
+
+img.save('tulipaPB.jpg')
